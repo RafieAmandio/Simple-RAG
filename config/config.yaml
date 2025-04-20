@@ -1,0 +1,21 @@
+# Vector database configuration
+vector_db:
+  name: "chroma"
+  persist_directory: "./data/processed/chroma_db"
+  collection_name: "documents"
+  embedding_model: "text-embedding-3-large"
+
+# Model configuration
+llm:
+  model_name: "gpt-4o"
+  temperature: 0.0
+  max_tokens: 1000
+
+# Document processing
+document_processing:
+  chunk_size: 1000
+  chunk_overlap: 200
+
+# Retrieval
+retrieval:
+  top_k: 4

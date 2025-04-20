@@ -1,0 +1,21 @@
+name: rag_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pandas
+  - tqdm
+  - pyyaml
+  - python-dotenv
+  - pip:
+    - langchain>=0.1.0
+    - langchain-community>=0.0.13
+    - langchain-openai>=0.0.5
+    - openai>=1.10.0
+    - chromadb>=0.4.22
+    - sentence-transformers>=2.2.2
+    - ragas>=0.1.0
+    - datasets>=2.14.6
+    - nltk>=3.8.1 

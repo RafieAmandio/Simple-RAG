@@ -1,0 +1,88 @@
+# Python-related
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+conda-env/
+.python-version
+
+# Project-specific
+data/processed/
+data/processed/*
+!data/processed/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+data/raw/eval_questions.csv
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Distribution / packaging
+.Python
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE-related
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vector stores
+chroma_db/
+*.chroma/
+**/chroma_db/
+vector_index/
+vector_store/
+
+# Models and large files
+*.bin
+*.h5
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.mlmodel
+
+# RAGAS evaluation results
+**/evaluation_results.csv
+
+# OpenAI API related
+openai_api_log.jsonl 
