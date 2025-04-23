@@ -26,6 +26,7 @@ class RAGGenerator:
             input_variables=["page_content"],
             template="{page_content}",
         )
+       
         
         # Create the question answering chain
         self.qa_prompt = PromptTemplate(
