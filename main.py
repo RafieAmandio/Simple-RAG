@@ -41,5 +41,7 @@ def main():
     if args.evaluate:
         os.system("python scripts/run_evaluation.py")
 
+
+
 if __name__ == "__main__":
     main()

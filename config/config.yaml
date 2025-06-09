@@ -10,12 +10,17 @@ llm:
   model_name: "gpt-4o"
   temperature: 0.0
   max_tokens: 1000
+  seed: 42
 
 # Document processing
 document_processing:
-  chunk_size: 1000
-  chunk_overlap: 200
+  chunk_size: 600
+  chunk_overlap: 150
 
 # Retrieval
 retrieval:
-  top_k: 4
+  top_k: 10
+
+evaluation:
+  enable_deterministic: true
+  log_intermediate_steps: true

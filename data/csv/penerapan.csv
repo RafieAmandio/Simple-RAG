@@ -1,0 +1,4 @@
+question,ground_truth
+"How does Advanced RAG optimize the pre-retrieval process compared to Naive RAG?","Advanced RAG optimizes pre-retrieval by enhancing data granularity, optimizing index structures, adding metadata, performing alignment optimization, and implementing mixed retrieval. It also focuses on query optimization through rewriting, transformation, and expansion techniques."
+"Berikan contoh sederhana dari conditional probability dan penjelasannya.","Contoh: Jika dadu pertama menunjukkan angka 3, maka probabilitas jumlah kedua dadu adalah 8 adalah 1/6."
+"Berikan contoh encapsulation pada class Student di Java.","Encapsulation dapat dilakukan dengan menjadikan variabel age sebagai private dan menyediakan setter dengan validasi, serta getter, seperti: 'private int age; boolean SetAge(int a) { if (a>=0 && a<130) { age=a; return true; } return false; } int GetAge() { return age; }'."

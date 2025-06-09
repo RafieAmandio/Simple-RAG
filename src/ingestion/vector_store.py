@@ -6,17 +6,27 @@ import chromadb
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 from langchain.schema import Document
+from dotenv import load_dotenv
 
 class VectorStore:
     """Vector store for document embeddings using ChromaDB."""
     
     def __init__(self, config: Dict[str, Any]):
         """Initialize with config settings."""
+        # Load environment variables
+        load_dotenv()
+        
+        # Get API key from environment
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY not found in environment variables. Please set it in .env file.")
+        
         self.config = config
         self.persist_directory = config["vector_db"]["persist_directory"]
         self.collection_name = config["vector_db"]["collection_name"]
         self.embedding_model = OpenAIEmbeddings(
             model=config["vector_db"]["embedding_model"],
+            openai_api_key=api_key
         )
     
     def create_or_load(self, documents: Optional[List[Document]] = None):

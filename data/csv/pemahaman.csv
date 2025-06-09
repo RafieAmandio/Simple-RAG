@@ -1,0 +1,4 @@
+question,ground_truth
+"What is RAG and when did it gain prominence?","Retrieval-Augmented Generation (RAG) enhances LLMs by retrieving relevant document chunks from external knowledge bases. It gained prominence shortly after the widespread adoption of ChatGPT."
+"Apa perbedaan antara class, abstract class, dan interface di Java?","Class dapat memiliki implementasi dan dapat diinstansiasi. Abstract class tidak dapat diinstansiasi dan bisa memiliki implementasi sebagian. Interface tidak memiliki state dan semua metodenya adalah abstract; dapat diwarisi oleh banyak class sekaligus."
+"Apa definisi dari probabilitas menurut dokumen ini?","Probabilitas adalah proporsi jangka panjang dari berapa kali suatu kejadian muncul dalam pengulangan eksperimen yang independen."

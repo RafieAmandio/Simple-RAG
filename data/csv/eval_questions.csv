@@ -1,0 +1,5 @@
+"Apa definisi dari probabilitas menurut dokumen ini?","Probabilitas adalah proporsi jangka panjang dari berapa kali suatu kejadian muncul dalam pengulangan eksperimen yang independen."
+"Berikan contoh sederhana dari conditional probability dan penjelasannya.","Contoh: Jika dadu pertama menunjukkan angka 3, maka probabilitas jumlah kedua dadu adalah 8 adalah 1/6."
+"Bagaimana hukum probabilitas total dijelaskan dan diterapkan dalam dokumen ini?","Hukum probabilitas total menyatakan bahwa P(B) = ∑ P(B|Ai) * P(Ai) untuk kejadian-kejadian Ai yang saling eksklusif dan lengkap."
+"Jelaskan bagaimana konsep rantai Markov diterapkan dalam modeling proses stokastik.","Rantai Markov memodelkan sistem stokastik di mana probabilitas transisi antar state hanya bergantung pada state saat ini, bukan histori sebelumnya."
+"Jika 1% populasi memiliki penyakit A, tes memiliki sensitivitas 99% dan spesifisitas 95%, berapa probabilitas seseorang benar-benar sakit jika hasil tesnya positif?","Sekitar 16.67%."

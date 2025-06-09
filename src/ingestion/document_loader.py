@@ -31,22 +31,27 @@ class DocumentLoader:
                 return TextLoader(file_path)
             elif ext == ".pdf":
                 return PyPDFLoader(file_path)
-            elif ext == ".csv":
-                return CSVLoader(file_path, encoding="utf-8")
             # Default to text loader for unknown types
             return TextLoader(file_path)
         
-        loader = DirectoryLoader(
-            directory_path,
-            glob=glob_pattern,
+        # Load PDFs from raw directory
+        pdf_dir = os.path.join(os.path.dirname(directory_path), "raw")
+        pdf_loader = DirectoryLoader(
+            pdf_dir,
+            glob="**/*.pdf",
             loader_cls=lambda path: get_loader(path),
             show_progress=True,
         )
         
-        print(f"Loading documents from {directory_path}...")
-        documents = loader.load()
-        print(f"Loaded {len(documents)} documents.")
-        return documents
+        print(f"Loading PDF documents from {pdf_dir}...")
+        pdf_documents = pdf_loader.load()
+        print(f"Loaded {len(pdf_documents)} PDF documents.")
+        
+        # Combine all documents
+        all_documents = pdf_documents
+        print(f"Total documents loaded: {len(all_documents)}")
+        
+        return all_documents
     
     def split_documents(self, documents: List[Document]) -> List[Document]:
         """Split documents into chunks."""
